@@ -14,10 +14,11 @@ declare(strict_types=1);
 namespace Sonata\NewsBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class SynchronizeCommentsCountCommand extends ContainerAwareCommand
+class SynchronizeCommentsCountCommand extends Command
 {
     public function configure(): void
     {
